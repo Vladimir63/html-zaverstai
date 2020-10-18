@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>main-page</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navigation">
+        <div class="nav-logo">
+          <a href="#">
+            <img src="img/logo-header.svg" alt="" />
+          </a>
+        </div>
+        <div class="nav-menu">
+          <ul class="nav-menu__list">
+            <li><a href="index.html#main">Статьи</a></li>
+            <li><a href="index.html#aboutme">Обо мне</a></li>
+            <li><a href="index.html#portfolio">Портфолио</a></li>
+            <li><a href="index.html#form">Написать мне</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="main">
+        <div class="main-head">
+          <a name="main">
+            <div class="main__title">Все статьи
+            </div>
+          </a>
+          <div class="filter">
+
+            <select class="btn__filter">
+              <option value="none">Выбрать тему</option>
+              <option value="travel">Путешествия</option>
+              <option value="city">Город</option>
+              <option value="book">Книги</option>
+              <option value="photo">Фотографии</option>
+              <option value="food">Рецепты</option>
+            </select>
+            <img src="img/select.svg" alt="">
+          </div>
+        </div>
+        <div class="main-gallery">
+
+          <div class="gallery__item" data-tags="travel">
+            <div class="main-gallery__card">
+              <div class="card__img">
+                <a href="motivation.html">
+                  <img src="img/card1.png" alt=""></a>
+              </div>
+              <h3 class="card__title">Путешествие в Берлин в августе</h3>
+              <p class="card__description">Летний месяц я провела в столице Германии вместе с друзьями. И вот как это
+                было!
+              </p>
+              <div class="card__info">
+                <div class="tag">Теги: путешествия</div>
+                <div class="date">29.09.2020</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item" data-tags="city">
+            <div class="main-gallery__card">
+              <div class="card__img">
+                <a href="motivation.html">
+                  <img src="img/card2.png" alt=""></a>
+              </div>
+              <h3 class="card__title">Где выпить колдбрю в Москве</h3>
+              <p class="card__description">Собрала для вас список любимых кофеен,
+                где подают лучший летний напиток.
+              </p>
+              <div class="card__info">
+                <div class="tag">Теги: город</div>
+                <div class="date">24.07.2020</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__item" data-tags="book">
+            <div class="main-gallery__card">
+              <div class="card__img">
+                <a href="motivation.html">
+                  <img src="img/card3.png" alt=""></a>
+              </div>
+              <h3 class="card__title">Прочитано: книжные рекомендации</h3>
+              <p class="card__description">Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.
+              </p>
+              <div class="card__info">
+                <div class="tag">Теги: книги</div>
+                <div class="date">15.07.2020</div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="gallery__item" data-tags="photo">
+            <div class="card__bigImg">
+              <a href="motivation.html">
+                <img src="img/card4.png" alt="">
+                <div class="card__bigImg__inner">
+                  <h3 class="card__title card__title__bigImg">Снимки на плёнку</h3>
+                  <p class="card__description card__description__bigImg">Поделилась с вами весенними фотографиями,
+                    и секретами удачных снимков.
+                  </p>
+                  <div class="card__info card__info__bigImg">
+                    <div class="tag tag__bigImg">Теги: фотографии</div>
+                    <div class="date date__bigImg">29.06.2020</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="gallery__item" data-tags="food">
+            <div class="card__bigImg">
+              <a href="motivation.html">
+                <img src="img/card5.png" alt="">
+                <div class="card__bigImg__inner">
+                  <h3 class="card__title card__title__bigImg">Домашний чизкейк </h3>
+                  <p class="card__description card__description__bigImg">Что может быть лучше чизкейка с сезонными
+                    ягодами? Только домашний чизкейк!
+                  </p>
+                  <div class="card__info card__info__bigImg">
+                    <div class="tag tag__bigImg">Теги: рецепты</div>
+                    <div class="date date__bigImg">24.06.2020</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <button class="btn">
+          Показать ещё
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="about">
+        <div class="block__title">
+          <a name="aboutme">
+            <h2>Обо мне
+            </h2>
+          </a>
+        </div>
+        <div class="about__box">
+          <div class="about__box__photo">
+
+            <img src="img/about1.png" alt="">
+
+          </div>
+          <div class="about__box__text">
+            <div class="text-main">
+              <p>Всем привет! Меня зовут Аня, и это мой личный блог.
+                Здесь ты найдёшь рассказы о моих путешествиях, снимки
+                на плёнку, рецепты, обзоры на книги. В общем, тексты о том,
+                что мне инетресно.
+              </p>
+              <p>Я работаю копирайтером, поэтому мой блоге — это ещё и моё
+                портфолио. Ниже размещены несколько моих лучших
+                рабочих текстов. Буду рада новым сотрудничествам!</p>
+              <p>Если вы хотите написать мне — это можно сделать в соцсетях
+                или через форму. Всегда приятно услышать обратную связь
+                от читателей и познакомиться поближе.</p>
+              <p>Приятного чтения!</p>
+            </div>
+            <div class="text-idea">Я верю, что каждый раз пробуя новое,
+              выходящее за зону моего комфорта,
+              я действительно узнаю настояющую
+              себя. </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="portfolio">
+        <div class="block__title">
+          <a name="portfolio">
+            <h2>Портфолио
+            </h2>
+          </a>
+        </div>
+        <div class="portfolio__cards">
+          <div class="portfolio__cards__item">
+            <div class="card__photoContent">
+              <a href="#">
+                <img src="img/portfolio1.png" alt="">
+            </div>
+            <div class="card__textContent">
+              <div class="portfolio__cards__item-title">Блог HTML Academy</div>
+              <div class="portfolio__cards__item-suptitle">«Как учиться продуктивно»</div>
+              <div class="portfolio__cards__item-description">Про основные методы обучения,
+                которые помогут быстро и надолго
+                запомнить информацию.</div>
+            </div>
+            </a>
+          </div>
+          <div class="portfolio__cards__item">
+            <div class="card__photoContent">
+              <a href="#">
+                <img src="img/portfolio2.png" alt="">
+            </div>
+            <div class="card__textContent">
+              <div class="portfolio__cards__item-title dark__textContent">Журнал «LNK»</div>
+              <div class="portfolio__cards__item-suptitle dark__textContent">«Зачем поцели нужны человеку?
+                И какие они бывают»</div>
+              <div class="portfolio__cards__item-description dark__textContent">Поцелуи — повсеместная ежедневная
+                практика. Но зачем люди целуются?
+                Какие смысли вкладывают в этот ритуал?
+                И где корни этой практики?</div>
+            </div>
+            </a>
+          </div>
+          <div class="portfolio__cards__item">
+            <div class="card__photoContent">
+              <a href="#">
+                <img src="img/portfolio3.png" alt="">
+            </div>
+            <div class="card__textContent">
+              <div class="portfolio__cards__item-title">Журнал «Т — Л»</div>
+              <div class="portfolio__cards__item-suptitle">«Советы по эффективной
+                удалённой работе»</div>
+              <div class="portfolio__cards__item-description">Поделилась лайфхаками, которые помогают
+                мне работать продуктивно из дома. </div>
+            </div>
+            </a>
+          </div>
+          <button class="btn">
+            Показать ещё
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="form">
+        <div class="block__title">
+          <a name="form">
+            <h2>Написать мне</h2>
+        </div></a>
+        <form class="form__block" action="">
+          <div class="form__block__content block__name">
+            <div class="form__block__title">Ваше имя</div>
+            <input class="input inner-form" placeholder="Иван Иванов" type="text" required=""></input>
+          </div>
+          <div class="form__block__content block__email">
+            <div class="form__block__title">Email</div>
+            <input class="input inner-form" placeholder="google@gmail.com" type="email" required=""></input>
+          </div>
+
+          <div class="form__block__content block__textarea">
+            <div class="form__block__title">Сообщение</div>
+            <textarea class="textarea inner-form" placeholder="Напишите здесь ваше сообщение." rows="5" minlength="10"
+              maxlength="200" required=""></textarea>
+          </div>
+
+          <button class="btn btn-form btn-diz" type="submit">
+            ОТПРАВИТЬ
+          </button>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__soc">
+        <a href="#" class="vk">ВК</a>
+        <a href="#" class="tg">Телеграм</a>
+        <a href="#" class="inst">Инстаграм</a>
+        <a href="#" class="twitter">Твиттер</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <!-- <script src="js/libs.min.js"></script> -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
